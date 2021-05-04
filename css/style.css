@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+h1, h4 {
+    font-family: 'Noto Serif', serif;
+    user-select: none;
+}
+
+#header {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+#footer {
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.description {
+    margin: 0 5%;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 0.33fr;
+    padding-top: 10px;
+    height: 950px;
+}
+
+.left-hand-side {
+    display: grid;
+    grid-template-rows: 0.1fr 0.01fr 0.09fr 0.8fr;
+    height: 950px;
+}
+
+.mapchart-container {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dual-chart-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 0 20px;
+    height: 950px;
+}
+
+.chordchart-container {
+    display: grid;
+    padding-top: 20px;
+    place-self: end;
+}
+
+.consumption-annotation {
+    font-size: 16px;
+}
+
+.barchart-container {
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 0.05fr 0.80fr 0.15fr;
+    height: 400px;
+}
+
+#barchart-sort {
+    margin-right: 35%;
+}
+
+/* time slider */
+.time-filter-container {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    place-items: center;
+    margin-bottom: 5px;
+}
+
+.time-filter-container p {
+    margin: 5px;
+}
+
+#time-slider-container {
+    width: 70%;
+}
+
+.noUi-connect {
+    background: darkslategrey;
+}
+
+.noUi-connects {
+    cursor: pointer;
+}
+
+.noUi-handle {
+    cursor: grab;
+}
+
+.noUi-active {
+    cursor: grabbing;
+}
+
+.noUi-horizontal {
+    height: 13px;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 25px;
+    height: 20px;
+    right: -17px;
+    top: -4px;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+    display: none;
+}
+
+.axis {
+    color: grey
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.underneath {
+    pointer-events: none;
+    opacity: 0.999;
+}
+
+.opacity {
+    opacity: 1;
+}

@@ -1,0 +1,333 @@
+{
+    "nodes": [
+        {
+            "id": "CAN",
+            "group": 1
+        },
+        {
+            "id": "MEX",
+            "group": 1
+        },
+        {
+            "id": "USA",
+            "group": 1
+        },
+        {
+            "id": "ARG",
+            "group": 2
+        },
+        {
+            "id": "BRA",
+            "group": 2
+        },
+        {
+            "id": "CHL",
+            "group": 2
+        },
+        {
+            "id": "COL",
+            "group": 2
+        },
+        {
+            "id": "ECU",
+            "group": 2
+        },
+        {
+            "id": "PER",
+            "group": 2
+        },
+        {
+            "id": "VEN",
+            "group": 2
+        },
+        {
+            "id": "CAM",
+            "group": 2
+        },
+        {
+            "id": "AUT",
+            "group": 3
+        },
+        {
+            "id": "BEL",
+            "group": 3
+        },
+        {
+            "id": "BGR",
+            "group": 3
+        },
+        {
+            "id": "HRV",
+            "group": 3
+        },
+        {
+            "id": "CYP",
+            "group": 3
+        },
+        {
+            "id": "CZE",
+            "group": 3
+        },
+        {
+            "id": "DNK",
+            "group": 3
+        },
+        {
+            "id": "EST",
+            "group": 3
+        },
+        {
+            "id": "FIN",
+            "group": 3
+        },
+        {
+            "id": "FRA",
+            "group": 3
+        },
+        {
+            "id": "DEU",
+            "group": 3
+        },
+        {
+            "id": "GRC",
+            "group": 3
+        },
+        {
+            "id": "HUN",
+            "group": 3
+        },
+        {
+            "id": "ISL",
+            "group": 3
+        },
+        {
+            "id": "IRL",
+            "group": 3
+        },
+        {
+            "id": "ITA",
+            "group": 3
+        },
+        {
+            "id": "LVA",
+            "group": 3
+        },
+        {
+            "id": "LTU",
+            "group": 3
+        },
+        {
+            "id": "LUX",
+            "group": 3
+        },
+        {
+            "id": "NLD",
+            "group": 3
+        },
+        {
+            "id": "MKD",
+            "group": 3
+        },
+        {
+            "id": "NOR",
+            "group": 3
+        },
+        {
+            "id": "POL",
+            "group": 3
+        },
+        {
+            "id": "PRT",
+            "group": 3
+        },
+        {
+            "id": "ROU",
+            "group": 3
+        },
+        {
+            "id": "SVK",
+            "group": 3
+        },
+        {
+            "id": "SVN",
+            "group": 3
+        },
+        {
+            "id": "ESP",
+            "group": 3
+        },
+        {
+            "id": "SWE",
+            "group": 3
+        },
+        {
+            "id": "CHE",
+            "group": 3
+        },
+        {
+            "id": "TUR",
+            "group": 3
+        },
+        {
+            "id": "UKR",
+            "group": 3
+        },
+        {
+            "id": "GBR",
+            "group": 3
+        },
+        {
+            "id": "AZE",
+            "group": 4
+        },
+        {
+            "id": "BLR",
+            "group": 4
+        },
+        {
+            "id": "KAZ",
+            "group": 4
+        },
+        {
+            "id": "RUS",
+            "group": 4
+        },
+        {
+            "id": "TKM",
+            "group": 4
+        },
+        {
+            "id": "UZB",
+            "group": 4
+        },
+        {
+            "id": "IRN",
+            "group": 4
+        },
+        {
+            "id": "IRQ",
+            "group": 4
+        },
+        {
+            "id": "ISR",
+            "group": 4
+        },
+        {
+            "id": "KWT",
+            "group": 4
+        },
+        {
+            "id": "OMN",
+            "group": 4
+        },
+        {
+            "id": "QAT",
+            "group": 4
+        },
+        {
+            "id": "SAU",
+            "group": 4
+        },
+        {
+            "id": "ARE",
+            "group": 4
+        },
+        {
+            "id": "DZA",
+            "group": 4
+        },
+        {
+            "id": "EGY",
+            "group": 5
+        },
+        {
+            "id": "MAR",
+            "group": 5
+        },
+        {
+            "id": "ZAF",
+            "group": 5
+        },
+        {
+            "id": "EAF",
+            "group": 5
+        },
+        {
+            "id": "MAF",
+            "group": 5
+        },
+        {
+            "id": "WAF",
+            "group": 5
+        },
+        {
+            "id": "AUS",
+            "group": 6
+        },
+        {
+            "id": "BGD",
+            "group": 4
+        },
+        {
+            "id": "CHN",
+            "group": 4
+        },
+        {
+            "id": "HKG",
+            "group": 4
+        },
+        {
+            "id": "IND",
+            "group": 4
+        },
+        {
+            "id": "IDN",
+            "group": 4
+        },
+        {
+            "id": "JPN",
+            "group": 4
+        },
+        {
+            "id": "MYS",
+            "group": 4
+        },
+        {
+            "id": "NZL",
+            "group": 6
+        },
+        {
+            "id": "PAK",
+            "group": 4
+        },
+        {
+            "id": "PHL",
+            "group": 4
+        },
+        {
+            "id": "SGP",
+            "group": 4
+        },
+        {
+            "id": "KOR",
+            "group": 4
+        },
+        {
+            "id": "LKA",
+            "group": 4
+        },
+        {
+            "id": "TAI",
+            "group": 4
+        },
+        {
+            "id": "THA",
+            "group": 4
+        },
+        {
+            "id": "VNM",
+            "group": 4
+        }
+    ],
+    "links": []
+}

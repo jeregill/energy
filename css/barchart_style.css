@@ -1,0 +1,69 @@
+#barchart-title {
+    margin: 0;
+}
+
+#barchart .axis.y-axis .tick line, #barchart .axis.x-axis .tick line {
+    opacity: 0;
+}
+
+#barchart .bar:hover {
+    stroke: black;
+}
+
+#barchart .axis-title{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#barchart-footer {
+    height: 38px;
+    padding: 0 10px;
+}
+
+.btn-group {
+    z-index: 0;
+}
+
+/* barchart tooltip */
+#barchart-tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+    min-width: 160px;
+    color: #333;
+}
+
+#barchart-tooltip .tooltip-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#barchart-tooltip .tooltip-subtitle {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 350;
+}
+
+/* barchart highlighting */
+#barchart .bar {
+    stroke: #888888;
+    fill: 	#989898;
+}
+
+/* barchart highlighting */
+#barchart .bar.selected {
+    stroke: black;
+    stroke-width: 3px;
+    fill: #383838;
+}
+
+/* barchart highlighting */
+#barchart .bar.not-selected {
+    fill-opacity: 0.2;
+}

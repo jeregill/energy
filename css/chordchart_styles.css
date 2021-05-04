@@ -1,0 +1,50 @@
+.hover {
+    stroke: black;
+    stroke-width: 2;
+}
+
+.hover-rim {
+    stroke: black;
+}
+
+.highlight-node {
+    stroke: black;
+    stroke-width: 2;
+}
+
+.highlight-rim {
+    stroke: black;
+    stroke-width: 2;
+}
+
+.rim-text {
+    stroke: black;
+    stroke-width: 0.5;
+    user-select: none;
+}
+
+/* chordchart tooltip */
+#chordchart-tooltip {
+    position: absolute;
+    display: none;
+    background: #fff;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+    min-width: 160px;
+    color: #333;
+}
+
+#chordchart-tooltip .tooltip-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#chordchart-tooltip .tooltip-subtitle {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 350;
+}

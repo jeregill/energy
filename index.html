@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Energy</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="data:;base64,iVBORwOKGO="/>
+        <link rel="stylesheet" href="css/nouislider.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/barchart_style.css">
+        <link rel="stylesheet" href="css/chordchart_styles.css">
+        <link rel="stylesheet" href="css/mapchart_styles.css">
+        <link rel="stylesheet" href="css/searchbar_style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,100;1,700&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="main-container">
+        <div class="left-hand-side">
+            <div id="header">
+                <h1 class="display-4">54 Years of World Energy</h1>
+                <p class="description">
+                    Climate change is an increasing threat to the survival of the human race, and reducing our carbon footprint has become of paramount importance.
+                    A significant battle against climate change consists of changing how the world produces its energy, and which sources – oil, gas, renewables,
+                    amongst others – are being utilized.
+                    54 Years of World Energy is a data visualization that aims to help illustrate energy usage for each country in the past 50 years via an
+                    interactive map, force-directed circle graph, and bar chart to show energy usage and carbon emissions. This visualization uses the
+                    exajoule as our standard unit of measurement. For a frame of reference, the exajoule is equal to one quintillion (10<sup>18</sup>) joules.
+                    The <a href="https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami"> Tōhoku earthquake and tsunami</a> in Japan had 1.41 EJ
+                    of energy. Yearly U.S. energy consumption amounts to roughly 94 EJ.
+                </p>
+            </div>
+            <div class = "searchbar-container">
+                <div>
+                <div class="autocomplete" style="width:300px;">
+                    <input id="myInput" type="text" name="myCountry" placeholder="Search for a specific country">
+                </div>
+                <input class="btn-secondary btn-sm" type="button" value="Submit" onclick="searchCountry()">
+                </div>
+            </div>
+            <div class="time-filter-container" id="data-filters">
+                <div class="text-center">
+                    <p><em><strong>Filter all data by date.</strong></em></p>
+                    <p><em><strong>You can click "Scroll for me" to see the map automatically filter and update for each year from 1965-2019.</strong></em></p>
+                </div>
+                <div id="time-slider-container">
+                    <div id="time-slider"></div>
+                </div>
+                <div>
+                    <button class="btn btn-secondary" id="time-slider-submit" onclick="refreshValues()">Refresh</button>
+                    <button class="btn btn-outline-secondary" id="play-button" onclick="clickPlay()">
+                        <i class="bi bi-play-circle"></i>
+                        Scroll for me!
+                    </button>
+                </div>
+            </div>
+            <div class="mapchart-container">
+                <svg id="mapchart"></svg>
+            </div>
+        </div>
+        <div class="dual-chart-container">
+            <div class="chordchart-container">
+                <h4 class="text-center">CONSUMPTION</h4>
+                <p class="consumption-annotation">
+                    <em>
+                        The countries are linked to an energy type if it makes up more than 10% of that country's overall consumption.
+                    </em>
+                </p>
+                <svg id="chordchart"></svg>
+            </div>
+            <div class="barchart-container">
+                <h4 class="text-center" id="barchart-title">CARBON EMISSIONS</h4>
+                <svg id="barchart"></svg>
+                <div id="barchart-footer">
+                    <button class="btn btn-link btn-sm" id="barchart-sort">
+                        <i class="bi-sort-down" id="sort-icon"></i>
+                        Descending
+                    </button>
+                    <div class="btn-group">
+                        <input type="radio" class="btn-check" name="barchart-radio" id="top10" value="10" checked
+                            onclick="barchartRadioClick(event)">
+                        <label class="btn btn-sm btn-outline-secondary" for="top10">Top 10</label>
+                        <input type="radio" class="btn-check" name="barchart-radio" id="top30" value="30"
+                            onclick="barchartRadioClick(event)">
+                        <label class="btn btn-sm btn-outline-secondary" for="top30">Top 30</label>
+                        <input type="radio" class="btn-check" name="barchart-radio" id="top50" value="50"
+                            onclick="barchartRadioClick(event)">
+                        <label class="btn btn-sm btn-outline-secondary" for="top50">Top 50</label>
+                        <input type="radio" class="btn-check" name="barchart-radio" id="all" value="all"
+                            onclick="barchartRadioClick(event)">
+                        <label class="btn btn-sm btn-outline-secondary" for="all">All</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chordchart-tooltip"></div>
+    <div id="barchart-tooltip"></div>
+    <svg id="mapchart-tooltip"></svg>
+
+    <div id="footer">
+        <p><code>Painstakingly made by Bernard C, Jeremy G, Gaurav V</code></p>
+    </div>
+
+    <!-- topojson bundle -->
+    <script src="js/scripts/topojson.v3.min.js"></script>
+    <!-- jquery bundle -->
+    <script src="js/scripts/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap bundle -->
+    <script src="js/scripts/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts/nouislider.min.js"></script>
+    <!-- D3 bundle -->
+    <script src="js/scripts/d3.v6.min.js"></script>
+    <!-- Our JS code -->
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mapchart.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/chordchart.js"></script>
+</body>
+
+</html>
